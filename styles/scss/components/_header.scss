@@ -1,0 +1,119 @@
+header{
+  background-color: $white;
+  border-bottom: 4px solid $lightgrey;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  img {
+    max-width: 150px;
+    width: 100%;
+  }
+  .header{
+    &_mobile{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      span{
+        width: 26px;
+        height: 3px;
+        margin: 3px 0;
+        background: $naranja;
+        border-radius: 2px;
+      }
+    }
+  }
+  .navbar{
+    padding: 1rem 0;
+    align-items: flex-end;
+    .navbar-nav {
+      .nav-link{
+        color: $text;
+      }
+      .shopping{
+        background-color: $naranja;
+        color: $white;
+        border-radius: 5px;
+        font-weight: 500;
+        padding: 2px 7px;
+        &:hover{
+          color: $white;
+          background-color: #f67327d4;
+        }
+      }
+      .shopp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+/*----------------------------Queries-------------------------------*/
+
+@media (min-width: 992px) {
+  header{
+    .navbar .navbar-nav .nav-item{
+      margin: 0 8px;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  header{
+    .navbar{
+      align-items: center;
+      &-toggler{
+        color: $white !important;
+        border-color: $white !important;
+      }
+      &-collapse {
+        background-color: white;
+        margin: 0;
+        position: fixed;
+        top: 106.7px;
+        left: 0;
+        width: 100%;
+      }
+      .navbar-nav {
+        .nav-item{
+          border-bottom: 1px solid $lightgrey;
+          width: 100%;
+          padding: 0 30px;
+        }
+        .shopp{
+          align-items: flex-start;
+          .shopping {
+            margin: 0.5rem 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  header{
+    .navbar{
+      .nav-item{
+        padding: 0;
+        .nav-link{
+          max-width: 540px;
+          margin: 0 auto;
+          padding-left: 12px;
+          padding-right: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  header{
+    img {
+      max-width: 125px;
+    }
+  }
+}

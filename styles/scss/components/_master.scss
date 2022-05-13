@@ -1,0 +1,64 @@
+:root{
+  font-size: 16px;
+}
+
+body{
+  opacity: 0;
+}
+p.h1, h1, p.h2, h2, .display-5, p.display-5{
+  font-family: Nunito-Sans;
+  color: $white;
+}
+p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
+  font-family: Roboto;
+  color: $text;
+}
+
+a,p,div,input,button,textarea{
+  font-family: Roboto;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  position: relative;
+  padding: 8vh 0;
+}
+.btn{
+  background-color: $btn;
+  border-radius: 12px;
+  padding: 10px 40px;
+  color: $black;
+  font-weight: 700;
+  box-shadow: 0px 0px 9px #FFFFFF66;
+}
+.btn.btn-primary {
+  border-color: $white;
+}
+.btn.btn-secondary {
+  border-color: $btn;
+}
+.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus,
+.btn.btn-secondary:hover, .btn.btn-secondary:active, .btn.btn-secondary:focus{
+  background-color: $btn-hover!important;
+  box-shadow: none!important;
+}
+.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
+  border-color: $white!important;
+}
+.btn.btn-secondary:hover, .btn.btn-secondary:active, .btn.btn-secondary:focus{
+  background-color: $btn-hover!important;
+}
+/*----------------------------Queries-------------------------------*/
+
+@media (max-width: 1399.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {}
