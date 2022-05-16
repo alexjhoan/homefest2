@@ -52,6 +52,14 @@ section {
 .btn.btn-secondary:hover, .btn.btn-secondary:active, .btn.btn-secondary:focus{
   background-color: $btn-hover!important;
 }
+  span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: $white;
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
+  }
+  .swiper-pagination-bullet{
+    background-color: $white;
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, .5);
+  }
 /*----------------------------Queries-------------------------------*/
 
 @media (max-width: 1399.98px) {}

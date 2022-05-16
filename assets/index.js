@@ -1,5 +1,19 @@
 $(window).on('load', function () {
   $('body').css('opacity', '1');
+
+     $(".linkTo").click(function (e) {
+    e.preventDefault()
+    $("header .collapse.show").removeClass("show")
+    const url = $(this).attr("href")
+    const header = $("header").height()
+    if (!url.includes("html")) {
+      const section = $(url.slice(1)).offset().top;
+      window.scrollTo({top: section - header,behavior: "smooth"});
+    } else{
+      window.location = url
+    }
+  })
+
 });
 
 let offset
@@ -33,5 +47,26 @@ const swiperbanner = new Swiper(".swiper-banner", {
 $('.areas .areas_grid .item').each(function(){
   $(this).click(function(){
     $(this).find('ul').toggleClass('list-active')
+    $(this).siblings().find('ul').removeClass('list-active')
   })
 });
+
+// ------------------------------Actividades-----------------------------
+if (screen.width < 768) {
+    $(".swiper-gallery").addClass("swiper")
+    $(".actividad_gallery").addClass("swiper-wrapper")
+    $(".img").addClass("swiper-slide")
+      const mygallery = new Swiper(".swiper", {
+        spaceBetween: 9,
+        loop: true,
+        slidesPerView: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      })
+  }
