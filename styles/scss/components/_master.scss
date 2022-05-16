@@ -29,6 +29,7 @@ section {
 .btn{
   background-color: $btn;
   border-radius: 12px;
+  border: 2px solid transparent;
   padding: 10px 40px;
   color: $black;
   font-weight: 700;
