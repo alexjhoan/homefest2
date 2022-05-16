@@ -100,5 +100,84 @@
       }
     }
   }
+}
 
+//----------------------------Banner----------------------------//
+.areas{
+  background-image: url(../../assets/images/areas/fondo-luces.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 88.5px;
+  padding-bottom: 110px;
+  .tittle{
+    margin-bottom: 38px;
+    p{
+      font-weight: 800;
+      background-color: $btn;
+      display: inline;
+      span{
+        padding: 0 15px;
+      }
+    }
+  }
+  p.h5 {
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+  &_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 8px;
+    margin-top: 97px;
+    .item{
+      border-radius: 10px;
+      position: relative;
+      .footer {
+        position: sticky;
+        top: 100%;
+      }
+      .top{
+        text-align: center;
+        .img-top{
+          max-width: 70px;
+          width: 100%;
+          transform: translatey(-30px);
+        }
+      }
+      p, li{
+        color: $white;
+      }
+      p.h2{
+        font-weight: 900;
+        margin-bottom: 18px;
+        text-align: center;
+        margin-top: 20px;
+      }
+      ul {
+        list-style: none;
+        text-align: left;
+        height: auto;
+        padding-right: 8px;
+        li{
+          font-size: 16px;
+          font-weight: 400;
+          margin-bottom: 12px;
+        }
+     }
+    }
+    .item1{
+      background-color: $naranja;
+    }
+    .item2{
+      background-color: $btn;
+    }
+    .item3{
+      background-color: $text-fucsia;
+    }
+    .item4{
+      background-color: #0070DB;
+    }
+  }
 }

@@ -29,3 +29,9 @@ const swiperbanner = new Swiper(".swiper-banner", {
       clickable: true,
     },
   });
+// ------------------------------Evento Areas-----------------------------
+$('.areas .areas_grid .item').each(function(){
+  $(this).click(function(){
+    $(this).find('ul').toggleClass('list-active')
+  })
+});
