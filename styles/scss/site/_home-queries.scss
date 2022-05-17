@@ -21,6 +21,10 @@
   .informacion{
     display: block;
     padding-bottom:0;
+    padding-top: 40px;
+    .left{
+      padding-bottom: 10px;
+    }
     .right{
       position: relative;
       margin-top: 43px;
@@ -39,6 +43,9 @@
       display: flex;
       flex-direction: row;
     }
+    .right{
+      margin-top: 33px;
+    }
   }
 }
 @media (max-width: 767.98px) {
@@ -48,8 +55,10 @@
       text-align: left;
       margin-top: 12px;
     }
+    .swiper-slide{
+      height: 540px;
+    }
   }
-
   .fbanner{
     &_text{
       &_imgtext {
@@ -62,6 +71,9 @@
   .areas{
     padding-top: 54px;
     padding-bottom: 75px;
+    &_footer {
+      display: none;
+    }
     &_grid{
       display: block;
       margin-top: 42px;
@@ -69,9 +81,6 @@
       margin-left: auto;
       margin-right: auto;
       .item{
-        .footer {
-          display: none;
-        }
         .top{
           text-align: left;
           position: absolute;
@@ -106,11 +115,22 @@
       }
     }
   }
+  .event{
+    text-align: left;
+    .title{
+      margin-bottom: 24px;
+      align-items: flex-start;
+      img{
+        padding-top: 5px;
+      }
+    }
+  }
   .actividad{
     padding-top: 56px;
     padding-bottom: 46px;
     p.h5 {
       margin-bottom: 45px;
+      margin-top: 28px;
     }
     .swiper-gallery {
       width: 100%;
@@ -137,6 +157,9 @@
         flex-direction: column;
       }
     }
+    p.h5{
+      font-size: 16px;
+    }
     a{
       margin-left: 23px;
     }
@@ -144,7 +167,9 @@
 
 }
 @media (max-width: 575.98px) {
-
+  .banner{
+    margin-top: 96.5px;
+  }
 }
 @media (max-width: 425px) {
   .areas{

@@ -64,39 +64,6 @@ header{
 }
 
 @media (max-width: 991.98px) {
-  // header{
-  //   .navbar{
-  //     align-items: center;
-  //     &-toggler{
-  //       color: $white !important;
-  //       border-color: $white !important;
-  //     }
-  //     &-collapse {
-  //       background-color: white;
-  //       margin: 0;
-  //       position: fixed;
-  //       top: 96.5px;
-  //       left: 0;
-  //       width: 100%;
-  //     }
-  //     .navbar-nav {
-  //       .nav-item{
-  //         border-bottom: 1px solid $lightgrey;
-  //         width: 100%;
-  //         padding: 0 30px;
-  //       }
-  //       .shopp{
-  //         align-items: flex-start;
-  //         .shopping {
-  //           margin: 0.5rem 0;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-}
-
-@media (max-width: 767.98px) {
   header{
     .navbar{
       align-items: center;
@@ -108,21 +75,15 @@ header{
         background-color: white;
         margin: 0;
         position: fixed;
-        top: 96.5px;
+        top: 106px;
         left: 0;
         width: 100%;
       }
       .navbar-nav {
         .nav-item{
-          padding: 0;
           border-bottom: 1px solid $lightgrey;
           width: 100%;
-          .nav-link{
-            max-width: 540px;
-            margin: 0;
-            padding-left: 12px;
-            padding-right: 12px;
-          }
+          padding: 0 30px;
         }
         .shopp{
           align-items: flex-start;
@@ -135,8 +96,31 @@ header{
   }
 }
 
+@media (max-width: 767.98px) {
+  header{
+    .navbar{
+      .navbar-nav {
+        .nav-item{
+          padding: 0;
+          .nav-link{
+            max-width: 540px;
+            margin: 0;
+            padding-left: 12px;
+            padding-right: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 575.98px) {
   header{
+    .navbar{
+      &-collapse {
+        top: 96.5px;
+      }
+    }
     img {
       max-width: 125px;
     }
