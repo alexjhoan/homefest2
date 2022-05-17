@@ -48,18 +48,36 @@ section {
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
   border-color: $white!important;
+  transform: scale(1.03);
+  transition-duration: 0.5s;
+  color: $black;
 }
 .btn.btn-secondary:hover, .btn.btn-secondary:active, .btn.btn-secondary:focus{
   background-color: $btn-hover!important;
 }
-  span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: $white;
-    opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
+  // .btn.btn-primary{
+  //   &:hover{
+  //     transform: scale(1.03);
+  //     transition-duration: 0.5s;
+  //     color: $black;
+  //   }
+  // }
+p.h1{
+  font-weight: 800;
+  background-color: $btn;
+  display: inline;
+  span{
+    padding: 0 15px;
   }
-  .swiper-pagination-bullet{
-    background-color: $white;
-    opacity: var(--swiper-pagination-bullet-inactive-opacity, .5);
-  }
+}
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: $white;
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
+}
+.swiper-pagination-bullet{
+  background-color: $white;
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, .5);
+}
 /*----------------------------Queries-------------------------------*/
 
 @media (max-width: 1399.98px) {}

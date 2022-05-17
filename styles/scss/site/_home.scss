@@ -93,13 +93,7 @@
       }
     }
   }
-  .btn.btn-primary{
-    &:hover{
-      transform: scale(1.03);
-      transition-duration: 0.5s;
-      color: $black;
-    }
-  }
+
 }
 
 //----------------------------Areas----------------------------//
@@ -113,14 +107,14 @@
   padding-bottom: 110px;
   .tittle{
     margin-bottom: 38px;
-    p{
-      font-weight: 800;
-      background-color: $btn;
-      display: inline;
-      span{
-        padding: 0 15px;
-      }
-    }
+    // p{
+    //   font-weight: 800;
+    //   background-color: $btn;
+    //   display: inline;
+    //   span{
+    //     padding: 0 15px;
+    //   }
+    // }
   }
   p.h5 {
     margin-bottom: 30px;
@@ -196,7 +190,8 @@
   }
   p.h1{
     margin-bottom: 38px;
-    font-weight: 800;
+    background-color: #0070e4;
+    display: block;
     img{
       width: 100%;
       max-width: 28px;
@@ -217,14 +212,14 @@
   text-align: center;
   padding-top: 92px;
   padding-bottom: 111px;
-  p.h1{
-    font-weight: 800;
-    background-color: $btn;
-    display: inline;
-    span{
-      padding: 0 15px;
-    }
-  }
+  // p.h1{
+  //   font-weight: 800;
+  //   background-color: $btn;
+  //   display: inline;
+  //   span{
+  //     padding: 0 15px;
+  //   }
+  // }
   p.h5 {
     margin-top: 22px;
   }
@@ -302,5 +297,65 @@
         background-color: $azul;
       }
     }
+  }
+}
+
+//----------------------------Informacion----------------------------//
+.informacion{
+  background-color: $rosado;
+  display: flex;
+  align-items: center;
+  .text-header{
+    margin-top: 40px;
+  }
+  p{
+    color: $white;
+  }
+  .left{
+    padding-top: 57px;
+    padding-bottom: 42px;
+  }
+  &_imgtext{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    p{
+      margin-bottom: 0;
+    }
+    img{
+      margin-right: 25px;
+    }
+    .calendar{
+      max-width: 37px;
+      width: 100%;
+    }
+    .reloj{
+      max-width: 35px;
+      width: 100%;
+    }
+    .ubicacion{
+      max-width: 26px;
+      width: 100%;
+    }
+  }
+  .bottom{
+    margin-top: 44px;
+  }
+  .line{
+    width: 10%;
+    margin: 25px 0;
+    border: 1px solid $btn;
+  }
+  .right{
+    position: absolute;
+    background-image: url(../../assets/images/antel-arena-d.jpg);
+    background-size: auto 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
   }
 }
