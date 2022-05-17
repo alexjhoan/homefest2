@@ -359,3 +359,45 @@
     height: 100%;
   }
 }
+
+//----------------------------Plano----------------------------//
+.plano{
+  .element{
+    max-width: 60px;
+    width: 100%;
+  }
+  p{
+    color: #494949;
+  }
+  p.h1{
+    background-color: $white;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 12px;
+  }
+  .right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .zona{
+      p{
+        margin-bottom: 12px;
+      }
+      img{
+        max-width: 25px;
+        width: 100%;
+        margin-right: 12px;
+      }
+    }
+  }
+  .planoimg{
+    margin-top: 62px;
+    margin-bottom: 88px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+  }
+  .bottom{
+    text-align: center;
+  }
+}
