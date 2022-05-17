@@ -39,7 +39,8 @@ header{
         padding: 2px 7px;
         &:hover{
           color: $white;
-          background-color: #f67327d4;
+          transform: scale(1.03);
+          transition-duration: 0.5s;
         }
       }
       .shopp{

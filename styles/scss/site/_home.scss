@@ -401,3 +401,37 @@
     text-align: center;
   }
 }
+
+//----------------------------Comprar Entradas----------------------------//
+.entradas{
+  background-color: $naranja;
+  padding-top: 22px;
+  padding-bottom: 28px;
+  text-align: center;
+  .element{
+    max-width: 33px;
+    width: 100%;
+  }
+  p{
+    color: $white;
+  }
+  p.h1{
+    background-color: $naranja;
+    display: block;
+    margin-bottom: 14px;
+    margin-top: 17px;
+  }
+  p.h5{
+    font-weight: 400;
+    margin-bottom: 22px;
+  }
+  p.h4{
+    background-color: $azul;
+    display: inline;
+    padding: 0 15px;
+  }
+  .bottom{
+    margin-top: 30px;
+    margin-bottom: 27px;
+  }
+}
