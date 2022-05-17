@@ -70,22 +70,31 @@
 @media (max-width: 991.98px) {
   .footer{
     text-align: center;
-
+    padding-top: 36px;
+    padding-bottom: 55px;
     .organizan, .fest{
       flex-direction: column;
-      row-gap: 27px;
+      row-gap: 19px;
     }
     .organizan{
       margin-top: 39px;
       margin-bottom: 24px;
+      p{
+        margin-bottom: 0;
+      }
     }
     .contact{
-      margin-top: 57.37px;
-      margin-bottom: 21px
+      margin-top: 57px;
+      margin-bottom: 21px;
+      p{
+        margin-bottom: 0;
+      }
     }
     .seguinos{
-      margin-top: 61.26px;
-      margin-bottom: 19px;
+      margin-top: 60px;
+      p{
+        margin-bottom: 0;
+      }
     }
     .fest{
       &:after{
@@ -95,7 +104,7 @@
         height: 0;
         margin-left: auto;
         margin-right: auto;
-        top: -20px;
+        top: -38px;
       }
     }
   }

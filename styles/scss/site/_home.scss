@@ -6,6 +6,7 @@
     color: $white;
     font-weight: 400;
   }
+
   .swiper-slide{
     background-position: center top;
     background-size: cover;
@@ -45,12 +46,20 @@
   }
   &_right{
     text-align: right;
+    p.h2{
+      font-weight: 400;
+      span{
+        font-weight: 900;
+      }
+    }
   }
   .left{
     display: inline;
     font-weight: 900;
     span {
       padding: 0 5px;
+      display: inline-block;
+      margin: 8px 0;
     }
   }
 
@@ -107,18 +116,18 @@
   padding-bottom: 110px;
   .tittle{
     margin-bottom: 38px;
-    // p{
-    //   font-weight: 800;
-    //   background-color: $btn;
-    //   display: inline;
-    //   span{
-    //     padding: 0 15px;
-    //   }
-    // }
   }
   p.h5 {
     margin-bottom: 30px;
     font-weight: 400;
+  }
+  p.h3{
+    font-weight: 400;
+    margin-top: 20px;
+  }
+  &_footer {
+    position: sticky;
+    top: 100%;
   }
   &_grid{
     display: grid;
@@ -128,14 +137,11 @@
     .item{
       border-radius: 10px;
       position: relative;
+      transition: all 0.3s ease;
       &:hover{
         transform: scale(1.03);
-        transition-duration: 0.4s;
       }
-      .footer {
-        position: sticky;
-        top: 100%;
-      }
+
       .top{
         text-align: center;
         .img-top{
@@ -185,6 +191,7 @@
   padding: 55px 0;
   background-color: $azul;
   text-align: center;
+
   img.circulos {
     position: absolute;
     right: 0;
@@ -218,16 +225,9 @@
   text-align: center;
   padding-top: 92px;
   padding-bottom: 111px;
-  // p.h1{
-  //   font-weight: 800;
-  //   background-color: $btn;
-  //   display: inline;
-  //   span{
-  //     padding: 0 15px;
-  //   }
-  // }
   p.h5 {
     margin-top: 22px;
+    font-weight: 400;
   }
   .swiper-gallery {
     width: 80%;
@@ -427,12 +427,13 @@
   }
   p.h5{
     font-weight: 400;
-    margin-bottom: 22px;
+    margin-bottom: 30px;
   }
   p.h4{
     background-color: $azul;
     display: inline;
     padding: 0 15px;
+    font-family: NunitoSans;
   }
   .bottom{
     margin-top: 30px;
@@ -474,17 +475,13 @@
     font-weight: 400;
   }
   .form{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    column-gap: 40px;
     margin-bottom: 27px;
-    .left {
-      width: 50%;
-    }
-    .right {
-      width: 50%;
+    .item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 40px;
     }
   }
     a{
@@ -494,7 +491,6 @@
       img {
         width: 100%;
         max-width: 17px;
-        filter: invert(1);
         margin-right: 10px;
       }
     }
@@ -505,6 +501,7 @@
     width: 100%;
     .form-floating {
       margin-bottom: 10px;
+      width: 100%;
       .form-control{
         border: 2px solid #707070;
         border-radius:10px;
