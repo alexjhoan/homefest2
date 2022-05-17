@@ -185,6 +185,12 @@
   padding: 55px 0;
   background-color: $azul;
   text-align: center;
+  img.circulos {
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 730px;
+  }
   p{
     color: $white;
   }
@@ -379,6 +385,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    column-gap: 30px;
     .zona{
       p{
         margin-bottom: 12px;
@@ -393,9 +400,6 @@
   .planoimg{
     margin-top: 62px;
     margin-bottom: 88px;
-    overflow: scroll;
-    display: flex;
-    flex-direction: row;
   }
   .bottom{
     text-align: center;
@@ -433,5 +437,100 @@
   .bottom{
     margin-top: 30px;
     margin-bottom: 27px;
+  }
+  img.circulos {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 730px;
+    transform: rotate(180deg);
+  }
+}
+
+//----------------------------Empresas----------------------------//
+.empresas{
+  text-align: center;
+  p{
+    color: #494949;
+  }
+}
+
+//----------------------------Contacto----------------------------//
+.contacto{
+  background-image: url(../../assets/images/footer/footer-d.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  p{
+    color: $white;
+  }
+  p.h1{
+    display: block;
+    margin-bottom: 6px;
+    background: none;
+  }
+  p.h5{
+    margin-bottom: 28px;
+    font-weight: 400;
+  }
+  .form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 40px;
+    margin-bottom: 27px;
+    .left {
+      width: 50%;
+    }
+    .right {
+      width: 50%;
+    }
+  }
+    a{
+      text-decoration: none;
+      color: $white;
+      margin-left: 45px;
+      img {
+        width: 100%;
+        max-width: 17px;
+        filter: invert(1);
+        margin-right: 10px;
+      }
+    }
+
+
+  form#contactForm {
+    margin-bottom: 15px;
+    width: 100%;
+    .form-floating {
+      margin-bottom: 10px;
+      .form-control{
+        border: 2px solid #707070;
+        border-radius:10px;
+      }
+    }
+  }
+  #formSending p.strong {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    span{
+      background: $white;
+      height: 6px;
+      width: 6px;
+      border-radius: 100%;
+      margin: 0 3px;
+      animation: sending 1s infinite;
+    }
+    span:first-child {
+      margin-left: 6px;
+    }
+    span:nth-child(2) {
+      animation-delay: 200ms;
+    }
+    span:last-child {
+      animation-delay: 300ms;
+    }
   }
 }

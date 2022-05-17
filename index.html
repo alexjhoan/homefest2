@@ -191,6 +191,7 @@
       </div>
     </section>
     <section id="event" class="event">
+      <img src="assets/images/circulos.png" alt="" class="circulos">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -317,6 +318,78 @@
               <a href="#" class="btn btn-primary">Comprar entrada</a>
             </div>
             <p>Con tu entrada participás por sorteos diarios.</p>
+          </div>
+        </div>
+      </div>
+      <img src="assets/images/circulos.png" alt="" class="circulos">
+    </section>
+    <section id="empresas" class="empresas">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="h2 fw-bold">Empresas participantes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contacto" class="contacto">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="h1">Quiero exponer</p>
+            <p class="h5">¡Consultá cómo tu marca puede estar presente!</p>
+          </div>
+          <div class="col-12">
+            <form id="contactForm" class="needs-validation" action="javascript:void(0);" novalidate>
+              <div class="form">
+                <div class="left">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="Nombre" name="name" required>
+                    <label for="name">Nombre*</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="Empresa" name="empresa" required>
+                    <label for="empresa">Empresa*</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="tel" class="form-control" placeholder="Teléfono" name="phone" required>
+                    <label for="name">Teléfono*</label>
+                  </div>
+                </div>
+                <div class="right">
+                <div class="form-floating">
+                  <input type="text" class="form-control" placeholder="Apellido" name="name" required>
+                  <label for="pellido">Apellido*</label>
+                </div>
+                <div class="form-floating">
+                  <input type="text" class="form-control" placeholder="Descripción / Rubro*" name="descripción" required>
+                  <label for="descripción">Descripción / Rubro*</label>
+                </div>
+                <div class="form-floating">
+                  <input type="email" class="form-control" placeholder="Email" name="email" required>
+                  <label for="email">Email*</label>
+                </div>
+                </div>
+              </div>
+
+                <button class="btn btn-primary" type="submit" onclick="submited()">Enviar</button>
+                <a href="assets/brochure-homefest.pdf"><img src="assets/images/footer/download-solid.svg" alt="">Ver Brochure</a>
+
+            </form>
+            <div id="formSending" style="display: none;">
+              <p class="h3 strong">
+                Enviando
+                <span></span>
+                <span></span>
+                <span></span>
+              </p>
+            </div>
+            <div id="formSuccess" style="display: none;">
+              <p class="h3 strong">¡Consulta Enviada!</p>
+            </div>
+            <div id="formError" style="display: none;">
+              <p class="h3 strong">¡Error en el envio de su consulta.<br />Por favor intentar mas tarde!</p>
+            </div>
           </div>
         </div>
       </div>

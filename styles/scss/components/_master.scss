@@ -4,6 +4,7 @@
 
 body{
   opacity: 0;
+  overflow-x: hidden;
 }
 p.h1, h1, p.h2, h2, .display-5, p.display-5{
   font-family: NunitoSans;
@@ -17,7 +18,9 @@ p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
 a,p,div,input,button,textarea{
   font-family: Roboto;
 }
-
+a{
+  text-decoration: none;
+}
 img {
   max-width: 100%;
 }

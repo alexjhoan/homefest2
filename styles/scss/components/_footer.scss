@@ -1,11 +1,105 @@
-
+.footer{
+  background-color: #494846;
+  padding-top: 94px;
+  padding-bottom:109px;
+  img{
+    width: 100%;
+    margin-right: 12px;
+  }
+  p{
+    color: $white;
+    font-weight: 400;
+  }
+  a{
+    text-decoration: none;
+    color: $white;
+  }
+  .home{
+    text-align: center;
+  }
+  .logo{
+    max-width: 88.82px;
+  }
+  .infocasas{
+    max-width: 137.35px;
+  }
+  .constru{
+    max-width: 165px;
+  }
+  .whatsapp{
+    max-width: 24.5px;
+  }
+  .mail{
+    max-width: 24px;
+  }
+  .instagram{
+    max-width: 25px;
+  }
+  .organizan, .fest{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .fest{
+    position: relative;
+    &:after{
+      content: "";
+      position: absolute;
+      height: 123px;
+      border: 1px solid #99bd34;
+      top: 6px;
+    }
+  }
+  .seguinos{
+    &:after{
+      left: -14px;
+    }
+  }
+  .contact{
+    &:after{
+      left: -25px;
+    }
+  }
+}
 /*----------------------------Queries-------------------------------*/
 
 @media (max-width: 1399.98px) {}
 
 @media (max-width: 1199.98px) {}
 
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+  .footer{
+    text-align: center;
+
+    .organizan, .fest{
+      flex-direction: column;
+      row-gap: 27px;
+    }
+    .organizan{
+      margin-top: 39px;
+      margin-bottom: 24px;
+    }
+    .contact{
+      margin-top: 57.37px;
+      margin-bottom: 21px
+    }
+    .seguinos{
+      margin-top: 61.26px;
+      margin-bottom: 19px;
+    }
+    .fest{
+      &:after{
+        left: 0;
+        right: 0;
+        width: 110px;
+        height: 0;
+        margin-left: auto;
+        margin-right: auto;
+        top: -20px;
+      }
+    }
+  }
+}
 
 @media (max-width: 767.98px) {}
 
