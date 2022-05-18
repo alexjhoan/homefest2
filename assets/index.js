@@ -34,15 +34,25 @@ const swiperbanner = new Swiper(".swiper-banner", {
   spaceBetween: 4,
   loop: true,
   slidesPerView: 1,
-    // autoplay: {
-    //   delay: 4000,
-    //   disableOnInteraction: false,
-    // },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
     },
-  });
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  on: {
+    slideChangeTransitionStart: function () {
+      $('.banner_title').hide(0);
+      $('.banner_title').removeClass('animated');
+    },
+    slideChangeTransitionEnd: function () {
+      $('.banner_title').show(0).addClass('animated');
+    },
+  }
+});
+
 // ------------------------------Evento Areas-----------------------------
 $('.areas .areas_grid .item').each(function(){
   $(this).click(function(){
