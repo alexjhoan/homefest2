@@ -34,10 +34,10 @@ const swiperbanner = new Swiper(".swiper-banner", {
   spaceBetween: 4,
   loop: true,
   slidesPerView: 1,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
