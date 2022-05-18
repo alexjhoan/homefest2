@@ -14,7 +14,9 @@ p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
   font-family: Roboto;
   color: #494949;
 }
-
+p{
+  color: $white;
+}
 a,p,div,input,button,textarea{
   font-family: Roboto;
 }

@@ -34,10 +34,10 @@ const swiperbanner = new Swiper(".swiper-banner", {
   spaceBetween: 4,
   loop: true,
   slidesPerView: 1,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+    // autoplay: {
+    //   delay: 4000,
+    //   disableOnInteraction: false,
+    // },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -54,8 +54,8 @@ $('.areas .areas_grid .item').each(function(){
 // ------------------------------Actividades-----------------------------
 if (screen.width < 768) {
     $(".swiper-gallery").addClass("swiper")
-    $(".actividad_gallery").addClass("swiper-wrapper")
-    $(".img").addClass("swiper-slide")
+    $(".activity_gallery").addClass("swiper-wrapper")
+    $(".activity_gallery_item").addClass("swiper-slide")
       const mygallery = new Swiper(".swiper", {
         spaceBetween: 9,
         loop: true,

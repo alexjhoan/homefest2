@@ -18,14 +18,17 @@
       text-align: center;
     }
   }
-  .informacion{
+  .informat{
     display: block;
     padding-bottom:0;
     padding-top: 40px;
-    .left{
+    &_left{
       padding-bottom: 10px;
+      &_line{
+        width: 30%;
+      }
     }
-    .right{
+    &_right{
       position: relative;
       margin-top: 43px;
       width: 100%;
@@ -33,17 +36,14 @@
         width: 100%;
       }
     }
-    .line{
-      width: 30%;
-    }
   }
   .plano{
-    .planoimg{
+    &_img{
       overflow-x: scroll;
       display: flex;
       flex-direction: row;
     }
-    .right{
+    &_right{
       margin-top: 33px;
     }
   }
@@ -81,32 +81,31 @@
       margin-left: auto;
       margin-right: auto;
       .item{
-        .top{
+        &_top{
           text-align: left;
           position: absolute;
           top: -2px;
-          .img-top{
+          img{
             max-width: 55px;
             transform: translatex(-20px);
           }
         }
-        .text{
+        &_text{
           display: flex;
           flex-direction: row;
           align-items: center;
           justify-content: space-between;
           padding-left: 46px;
           padding-right: 24px;
+          p.h2 {
+            margin-bottom: 0;
+            margin-top: 0;
+            padding: 9px 0;
+          }
         }
-        p.h2 {
-          margin-bottom: 0;
-          margin-top: 0;
-          padding: 9px 0;
-        }
-         ul {
+        ul {
           height: 0;
           overflow: hidden;
-
           &.list-active{
             height: auto;
             margin-top: 12px;
@@ -125,7 +124,7 @@
       }
     }
   }
-  .actividad{
+  .activity{
     padding-top: 56px;
     padding-bottom: 46px;
     p.h5 {
@@ -141,19 +140,18 @@
       grid-row-gap: 0;
       margin-top: auto;
       margin-bottom: auto;
-      img {
-        width: 100%;
-        height: 100%;
-      }
     }
+  }
+  .swiper-button{
+    outline: none;
   }
   .swiper-button-next:after, .swiper-button-prev:after{
     color: white;
     font-size: 25px;
   }
   .contacto{
-    .form{
-      .item{
+    &_form{
+      &_item{
         flex-direction: column;
       }
     }
@@ -172,13 +170,7 @@
   }
 }
 @media (max-width: 425px) {
-  .areas{
-    &_grid{
-      .item{
-        .top{
-          top: -4px;
-        }
-      }
-    }
+  .areas .item_top{
+    top: -4px;
   }
 }
