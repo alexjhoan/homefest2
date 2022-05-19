@@ -18,10 +18,59 @@
       text-align: center;
     }
   }
+  .areas{
+    padding-top: 54px;
+    padding-bottom: 75px;
+    &_footer {
+      display: none;
+    }
+    &_grid{
+      display: block;
+      margin-top: 42px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      .item{
+        &_top{
+          text-align: left;
+          position: absolute;
+          top: -2px;
+          img{
+            max-width: 55px;
+            transform: translatex(-20px);
+          }
+        }
+        &_text{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          padding-left: 46px;
+          padding-right: 24px;
+          p.h2 {
+            margin-bottom: 0;
+            margin-top: 0;
+            padding: 9px 0;
+          }
+        }
+        ul {
+          height: 0;
+          overflow: hidden;
+          &.list-active{
+            height: auto;
+            margin-top: 12px;
+          }
+          li:last-child{
+            padding-bottom: 18px;
+          }
+        }
+      }
+    }
+  }
   .informat{
     display: block;
     padding-bottom:0;
-    padding-top: 40px;
+    padding-top: 10px;
     &_left{
       padding-bottom: 10px;
       &_line{
@@ -68,52 +117,7 @@
       }
     }
   }
-  .areas{
-    padding-top: 54px;
-    padding-bottom: 75px;
-    &_footer {
-      display: none;
-    }
-    &_grid{
-      display: block;
-      margin-top: 42px;
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-      .item{
-        &_top{
-          text-align: left;
-          position: absolute;
-          top: -2px;
-          img{
-            max-width: 55px;
-            transform: translatex(-20px);
-          }
-        }
-        &_text{
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-between;
-          padding-left: 46px;
-          padding-right: 24px;
-          p.h2 {
-            margin-bottom: 0;
-            margin-top: 0;
-            padding: 9px 0;
-          }
-        }
-        ul {
-          height: 0;
-          overflow: hidden;
-          &.list-active{
-            height: auto;
-            margin-top: 12px;
-          }
-        }
-      }
-    }
-  }
+
   .event{
     text-align: left;
     .title{
@@ -167,6 +171,13 @@
 @media (max-width: 575.98px) {
   .banner{
     margin-top: 96.5px;
+  }
+  .areas{
+    &_grid{
+      .item ul{
+        padding-right: 20px;
+      }
+    }
   }
 }
 @media (max-width: 425px) {
