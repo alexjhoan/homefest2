@@ -31,7 +31,7 @@ $('footer').load('components/footer.html')
 
 // ------------------------------Banner-----------------------------
 const swiperbanner = new Swiper(".swiper-banner", {
-  spaceBetween: 4,
+  spaceBetween: 0,
   loop: true,
   slidesPerView: 1,
     autoplay: {
