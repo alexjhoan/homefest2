@@ -66,7 +66,7 @@ if (screen.width < 768) {
     $(".swiper-gallery").addClass("swiper")
     $(".activity_gallery").addClass("swiper-wrapper")
     $(".activity_gallery_item").addClass("swiper-slide")
-      const mygallery = new Swiper(".swiper", {
+      const mygallery = new Swiper(".swiper-gallery", {
         spaceBetween: 9,
         loop: true,
         slidesPerView: 1,

@@ -111,6 +111,11 @@
       flex-direction: row;
       align-items: center;
       margin-top: 30px;
+      img{
+        width: auto;
+        max-width: none;
+        height: 30vh;
+      }
     }
     &_right{
       margin-top: 33px;
@@ -156,6 +161,9 @@
     }
     .swiper-gallery {
       width: 100%;
+      img{
+        width: 100%;
+      }
     }
     &_gallery{
       display: flex;
@@ -171,6 +179,19 @@
   .swiper-button-next:after, .swiper-button-prev:after{
     color: white;
     font-size: 25px;
+  }
+  .tickets{
+    p.h1{
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    p.h5{
+      font-size: 16px;
+    }
+    p.h4{
+      font-size: 20px;
+    }
+
   }
   .contacto{
     &_form{
