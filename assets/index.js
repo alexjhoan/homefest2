@@ -48,7 +48,7 @@ const swiperbanner = new Swiper(".swiper-banner", {
       $('.banner_title').removeClass('animated');
     },
     slideChangeTransitionEnd: function () {
-      $('.banner_title').show(0).addClass('animated');
+      $('.swiper-slide-active .banner_title').show(0).addClass('animated');
     },
   }
 });

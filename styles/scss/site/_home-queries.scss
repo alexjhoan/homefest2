@@ -141,7 +141,6 @@
       }
     }
   }
-
   .event{
     text-align: left;
     .title{
@@ -209,6 +208,9 @@
 
 }
 @media (max-width: 575.98px) {
+  .banner{
+    margin-top: 80px;
+  }
   .areas{
     &_grid{
       .item ul{
