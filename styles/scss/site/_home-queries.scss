@@ -114,7 +114,7 @@
       img{
         width: auto;
         max-width: none;
-        height: 30vh;
+        height: 80vh;
       }
     }
     &_right{
@@ -190,6 +190,12 @@
     p.h4{
       font-size: 20px;
     }
+    &_form{
+      margin-bottom: 35px;
+      &_item{
+        flex-direction: column;
+      }
+    }
 
   }
   .contacto{
@@ -215,6 +221,13 @@
     &_grid{
       .item ul{
         padding-right: 20px;
+      }
+    }
+  }
+  .plano{
+    &_img{
+      img{
+        height: 50vh;
       }
     }
   }

@@ -317,10 +317,61 @@
           <p class="h1">Comprar entradas</p>
           <p class="h5">Los tickets se adquieren en la boletería del Antel Arena y a través de esta web. <br class="d-none d-md-block">Niños menores de 12 años: entrada gratis.</p>
           <p class="h4 fw-bold">Entrada general: $150</p>
-          <div class="bottom">
-            <a href="#contacto" class="btn btn-primary">Comprar entrada</a>
+          <p class="text">Con tu entrada participas por sorteos diarios.</p>
+          <div class="tickets_line"></div>
+        </div>
+      </div>
+            <div class="row">
+        <div class="col-12">
+          <p class="h5">¡Registrate y te avisaremos cuando se habilite la compra de entradas!</p>
+        </div>
+        <div class="col-12">
+          <form id="ticketsForm" class="needs-validation" action="javascript:void(0);" novalidate>
+            <div class="tickets_form">
+              <div class="tickets_form_item">
+                <div class="form-floating">
+                  <input id="seleccion" type="text" class="form-control" placeholder="Seleccionar dia" name="seleccion" required>
+                  <label for="seleccion" class="form-label">Seleccionar día</label>
+                </div>
+                <div class="form-floating">
+                  <input id="cantidad" type="number" class="form-control" placeholder="Cantidad de entradas" name="cantidad" value="1" min="1" max="10" required>
+                  <label for="cantidad" class="form-label">Cantidad de entradas</label>
+                </div>
+              </div>
+              <div class="tickets_form_item">
+                <div class="form-floating">
+                  <input id="name" type="text" class="form-control" placeholder="Nombre completo" name="name" required>
+                  <label for="name" class="form-label">Nombre completo*</label>
+                </div>
+                <div class="form-floating">
+                  <input id="email" type="email" class="form-control" placeholder="Email" name="email" required>
+                  <label for="email" class="form-label">Email*</label>
+                </div>
+              </div>
+              <div class="tickets_form_item">
+                <div class="form-floating">
+                  <input id="telefono" type="tel" class="form-control" placeholder="Teléfono" name="phone" required>
+                  <label for="telefono" class="form-label">Teléfono*</label>
+                </div>
+                <div class="form-floating d-none d-md-block"></div>
+              </div>
+            </div>
+              <button class="btn btn-primary" type="submit" onclick="submite()">Enviar</button>
+          </form>
+          <div id="formSending" style="display: none;">
+            <p class="h3 strong">
+              Enviando
+              <span></span>
+              <span></span>
+              <span></span>
+            </p>
           </div>
-          <p>Con tu entrada participas por sorteos diarios.</p>
+          <div id="formSuccess" style="display: none;">
+            <p class="h3 strong">¡Registro Enviado!</p>
+          </div>
+          <div id="formError" style="display: none;">
+            <p class="h3 strong">¡Error en el envio de su registro.<br />Por favor intentar mas tarde!</p>
+          </div>
         </div>
       </div>
     </div>

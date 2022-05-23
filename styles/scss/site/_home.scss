@@ -416,12 +416,19 @@
   padding-top: 22px;
   padding-bottom: 28px;
   text-align: center;
+  .row{
+    position: relative;
+    z-index: 1;
+  }
   .element{
     max-width: 33px;
     width: 100%;
   }
   p{
     color: $white;
+  }
+  .text{
+    margin-top: 16px;
   }
   p.h1{
     background-color: $naranja;
@@ -439,16 +446,73 @@
     padding: 0 15px;
     font-family: NunitoSans;
   }
-  .bottom{
-    margin-top: 30px;
-    margin-bottom: 27px;
-  }
   .circulos {
     position: absolute;
     left: 0;
     bottom: 0;
     max-width: 730px;
     transform: rotate(180deg);
+    z-index: 0;
+  }
+  &_line{
+    border-bottom: 3px solid white;
+    background-color: #EC7327;
+    margin-left: auto;
+    margin-right: auto;
+    width: 126px;
+    margin-top: 40px;
+    margin-bottom: 26px;
+  }
+  &_form{
+    margin-bottom: 46px;
+    margin-top: 30px;
+    &_item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 40px;
+    }
+  }
+  #ticketsForm {
+    margin-bottom: 15px;
+    width: 100%;
+    .form-floating {
+      margin-bottom: 10px;
+      width: 100%;
+      label {
+        color: #494846;
+      }
+    }
+    .btn{
+      padding: 8px 60px;
+    }
+  }
+  .form-control{
+    border-radius: 10px;
+    border-color: #707070;
+  }
+  #formSending p.strong {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    span{
+      background: $white;
+      height: 6px;
+      width: 6px;
+      border-radius: 100%;
+      margin: 0 3px;
+      animation: sending 1s infinite;
+      &:first-child {
+        margin-left: 6px;
+      }
+      &:nth-child(2) {
+        animation-delay: 200ms;
+      }
+      &:last-child {
+        animation-delay: 300ms;
+      }
+    }
   }
 }
 
