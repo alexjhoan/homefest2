@@ -6,7 +6,7 @@ header{
   width: 100%;
   top: 0;
   img {
-    max-width: 148px;
+    max-width: 280px;
     width: 100%;
   }
   .header{
@@ -36,7 +36,7 @@ header{
         color: $white;
         border-radius: 5px;
         font-weight: 500;
-        padding: 2px 7px;
+        padding: 4px 11px;
         transition: all 0.5s ease;
         &:hover, &:active, &:focus{
           transform: scale(1.03);
@@ -79,7 +79,7 @@ header{
         background-color: white;
         margin: 0;
         position: fixed;
-        top: 89.8px;
+        top: 65.8px;
         left: 0;
         width: 100%;
       }
@@ -122,15 +122,15 @@ header{
 @media (max-width: 575.98px) {
   header{
     .navbar{
-      &-collapse {
-        top: 96.5px;
+      &-collapse{
+        top: 60px;
       }
       .navbar-nav .nav-item{
         padding: 0;
       }
     }
     img {
-      max-width: 125px;
+      max-width: 167.5px;
     }
   }
 }
