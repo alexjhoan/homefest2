@@ -392,6 +392,7 @@
     &_zona{
       p{
         margin-bottom: 12px;
+        display: flex;
       }
       img{
         max-width: 25px;
@@ -401,12 +402,24 @@
     }
   }
   &_img{
-    margin-top: 62px;
+    margin-top: 10px;
     margin-bottom: 88px;
   }
   .bottom{
     text-align: center;
   }
+
+
+.zona-edificio{
+  .cartel{
+    opacity: 0;
+  }
+  &:hover{
+    .cartel{
+      opacity: 1;
+    }
+  }
+}
 }
 
 //----------------------------Comprar Entradas----------------------------//

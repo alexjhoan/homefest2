@@ -11,12 +11,13 @@
   <meta property="og:site_name" content="Torre..." />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="preload" href="assets/lib/bootstrap/css/bootstrap.min.css" as="style">
-   <link rel="stylesheet" href="assets/lib/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/lib/swiper/swiper-bundle.min.css">
   <link rel="preload" href="assets/lib/animate.min.css" as="style">
   <link rel="preload" href="styles/css/fonts.css" as="style"/>
   <link rel="preload" href="styles/css/bundle.min.css" as="style"/>
   <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/lib/animate.min.css">
+  <script type="text/javascript" src="assets/lib/svg-inject.min.js"></script>
   <link rel="stylesheet" href="styles/css/fonts.css" />
   <link rel="stylesheet" href="styles/css/bundle.min.css?v=2" />
   <title>HomeFest</title>
@@ -299,9 +300,9 @@
           </div>
         </div>
         <div class="col-12 plano_img">
-          <img src="assets/images/plano/plano-d.png" alt="" class="imgd d-none d-md-block" loading="lazy">
-          <img src="assets/images/plano/plano-m1.png" alt="" class="m1 d-block d-md-none" loading="lazy">
-          <img src="assets/images/plano/plano-m2.png" alt="" class="m2 d-block d-md-none" loading="lazy">
+          <img src="assets/images/plano/plano-d.svg" onload="SVGInject(this)" alt="" class="imgd d-none d-lg-block" loading="lazy">
+          <img src="assets/images/plano/plano-m1.png" alt="" class="m1 d-block d-lg-none" loading="lazy">
+          <img src="assets/images/plano/plano-m2.png" alt="" class="m2 d-block d-lg-none" loading="lazy">
         </div>
         <div class="bottom">
           <a href="#contacto" class="btn btn-secondary">Quiero exponer</a>

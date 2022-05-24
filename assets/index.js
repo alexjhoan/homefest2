@@ -93,7 +93,7 @@ function dataSubmite(data) {
     'Content-type': 'application/json; charset=UTF-8',
     },
   };
-  fetch("https://www.infocasas.com.uy/proyectos/osaka?&formulario=1&json=1", requestOptions)
+  fetch("https://www.infocasas.com.uy/lanzamiento-home-fest?&formulario=1&json=1", requestOptions)
   .then((json) => {
     setTimeout(()=>{
       if (json.status === 200) {
@@ -125,7 +125,7 @@ function submite() {
     seleccion: form.seleccion.value,
     source: 2,
     utm_source: "web_cliente",
-    utm_medium: "austin",
+    utm_medium: "home_fest",
     InfoLeads: 1,
     IDflow_execution: 4315
   })
@@ -152,7 +152,7 @@ function dataSubmited(data) {
     'Content-type': 'application/json; charset=UTF-8',
     },
   };
-  fetch("https://www.infocasas.com.uy/proyectos/osaka?&formulario=1&json=1", requestOptions)
+  fetch("https://www.infocasas.com.uy/lanzamiento-home-fest?&formulario=1&json=1", requestOptions)
   .then((json) => {
     setTimeout(()=>{
       if (json.status === 200) {
@@ -183,7 +183,7 @@ function submited() {
     tel: form.phone.value,
     source: 2,
     utm_source: "web_cliente",
-    utm_medium: "austin",
+    utm_medium: "home_fest",
     InfoLeads: 1,
     IDflow_execution: 4315
   })
