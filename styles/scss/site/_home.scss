@@ -7,7 +7,7 @@
     background-position: center 25%;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 440px;
+    height: 70vh;
     overflow: hidden;
     .container {
       height: 100%;
@@ -21,7 +21,7 @@
   &_item1{
     background-image: linear-gradient(0deg, #00000099 0%, #00000000 30%),url(../../assets/images/header/b-deco.jpg);
     .left{
-      background: $text-fucsia;
+      background: $rosado;
     }
   }
   &_item2{
@@ -238,8 +238,8 @@
                          "img7 img8 img9";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-column-gap: 9px;
-    grid-row-gap: 9px;
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
     margin-top: 66px;
     max-width: 900px;
     margin-left: auto;
@@ -254,6 +254,7 @@
       align-items: center;
       justify-content: center;
       height: auto;
+      transition: all 0.5s ease;
       &:after{
         content: "";
         position: absolute;
@@ -263,15 +264,20 @@
         top: 0;
         opacity: 0.88;
       }
+      .text {
+        z-index: 1;
+      }
       p.h4{
         color: $white;
         font-family:  NunitoSans;
         font-weight: 400;
-        z-index: 1;
         margin-bottom: 0;
         span{
           font-weight: 900;
         }
+      }
+      &:hover{
+        transform: scale(1.04);
       }
     }
     .img1{
@@ -283,25 +289,25 @@
     .img3{
       background-image: url(../../assets/images/actividades/img3.jpg);
       &:after{
-        background-color:$rosado;
+        background-color:#ADC94A;
       }
     }
     .img5{
-      background-image: url(../../assets/images/actividades/img5.jpg);
+      background-image: url(../../assets/images/actividades/img6.jpg);
       &:after{
-        background-color: $naranja;
+        background-color: $text-fucsia;
       }
     }
     .img7{
       background-image: url(../../assets/images/actividades/img7.jpg);
       &:after{
-        background-color: $btn;
+        background-color: #ADC94A;
       }
     }
     .img9{
-      background-image: url(../../assets/images/actividades/img9.jpg);
+      background-image: url(../../assets/images/actividades/img5.jpg);
       &:after{
-        background-color: $azul;
+        background-color: $naranja;
       }
     }
   }
@@ -408,18 +414,16 @@
   .bottom{
     text-align: center;
   }
-
-
-.zona-edificio{
-  .cartel{
-    opacity: 0;
-  }
-  &:hover{
+  .zona-edificio{
     .cartel{
-      opacity: 1;
+      opacity: 0;
+    }
+    &:hover{
+      .cartel{
+        opacity: 1;
+      }
     }
   }
-}
 }
 
 //----------------------------Comprar Entradas----------------------------//
@@ -440,7 +444,7 @@
     color: $white;
   }
   .text{
-    margin-top: 16px;
+    margin-top: 20px;
   }
   p.h1{
     background-color: $naranja;
@@ -450,9 +454,9 @@
   }
   p.h5{
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
   }
-  p.h4{
+  p.blue{
     background-color: $azul;
     display: inline;
     padding: 0 15px;
@@ -530,10 +534,12 @@
 
 //----------------------------Empresas----------------------------//
 .business{
-  display: none;
   text-align: center;
   p{
     color: #494949;
+  }
+  img{
+    margin-top: 36px;
   }
 }
 
