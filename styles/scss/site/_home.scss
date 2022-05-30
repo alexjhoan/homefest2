@@ -14,32 +14,44 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      padding-bottom: 40px;
+      padding-bottom: 95px;
     }
   }
 
   &_item1{
-    background-image: linear-gradient(0deg, #00000099 0%, #00000000 30%),url(../../assets/images/header/b-deco.jpg);
+    background-image: linear-gradient(0deg, #00000099 0%, #00000000 30%),url(../../assets/images/header/d-1.jpg);
     .left{
-      background: $rosado;
+      background: $azul;
     }
   }
   &_item2{
-    background-image: linear-gradient(0deg, #00000099 0%, #00000000 30%),url(../../assets/images/header/b-constru.jpg);
-    .left{
-      background: $btn;
-    }
-  }
-  &_item3{
-    background-image: linear-gradient(0deg, #00000099 0%, #00000000 30%),url(../../assets/images/header/b-inmo.jpg);
+    background-image: linear-gradient(0deg, #00000099 0%, #00000000 30%),url(../../assets/images/header/d-2.jpg);
     .left{
       background: $naranja;
     }
   }
+  &_item3{
+    background-image: linear-gradient(0deg, #00000099 0%, #00000000 30%),url(../../assets/images/header/d-3.jpg);
+    .left{
+      background: $text-fucsia;
+    }
+  }
   &_item4{
-    background-image: linear-gradient(0deg, #00000099 0%, #00000000 30%),url(../../assets/images/header/b-tecno.jpg);
+    background-image: linear-gradient(0deg, #00000099 0%, #00000000 30%),url(../../assets/images/header/d-4.jpg);
     .left{
       background: $azul;
+    }
+  }
+  &_item5{
+    background-image: linear-gradient(0deg, #00000099 0%, #00000000 30%),url(../../assets/images/header/d-5.jpg);
+    .left{
+      background: $btn;
+    }
+  }
+  &_item6{
+    background-image: linear-gradient(0deg, #00000099 0%, #00000000 30%),url(../../assets/images/header/d-6.jpg);
+    .left{
+      background: $naranja;
     }
   }
   &_right{
@@ -106,7 +118,7 @@
   background-size: cover;
   text-align: center;
   padding-top: 88.5px;
-  padding-bottom: 110px;
+  padding-bottom: 118px;
   &_tittle{
     margin-bottom: 38px;
   }
@@ -127,6 +139,9 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 8px;
     margin-top: 97px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     .item{
       border-radius: 10px;
       position: relative;
@@ -190,6 +205,11 @@
   }
   p{
     color: $white;
+    margin-bottom: 20px;
+  }
+  p.h5{
+    margin-top: 35px;
+    margin-bottom: 25px;
   }
   &_title{
     display: flex;
@@ -207,9 +227,6 @@
       display: block;
       margin-bottom: 0;
     }
-  }
-  p.h5{
-    margin-top: 18px;
   }
 }
 
@@ -445,7 +462,7 @@
     color: $white;
   }
   .text{
-    margin-top: 20px;
+    margin-top: 10px;
   }
   p.h1{
     background-color: $naranja;
@@ -458,10 +475,13 @@
     margin-bottom: 24px;
   }
   p.blue{
-    background-color: $azul;
+    span{
+      background-color: $azul;
     display: inline;
     padding: 0 15px;
     font-family: NunitoSans;
+    }
+
   }
   .circulos {
     position: absolute;

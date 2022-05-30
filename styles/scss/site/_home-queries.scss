@@ -132,16 +132,22 @@
 @media (max-width: 767.98px) {
   .banner{
     &_item1{
-      background-image: linear-gradient(0deg, #00000099 0%, #00000000 45%),url(../../assets/images/header/deco-m.jpg);
+      background-image: linear-gradient(0deg, #00000099 0%, #00000000 45%),url(../../assets/images/header/m-1.jpg);
     }
     &_item2{
-      background-image: linear-gradient(0deg, #00000099 0%, #00000000 45%),url(../../assets/images/header/constru-m.jpg);
+      background-image: linear-gradient(0deg, #00000099 0%, #00000000 45%),url(../../assets/images/header/m-2.jpg);
     }
     &_item3{
-      background-image: linear-gradient(0deg, #00000099 0%, #00000000 45%),url(../../assets/images/header/inmo-m.jpg);
+      background-image: linear-gradient(0deg, #00000099 0%, #00000000 45%),url(../../assets/images/header/m-3.jpg);
     }
     &_item4{
-      background-image: linear-gradient(0deg, #00000099 0%, #00000000 45%),url(../../assets/images/header/tecno-m.jpg);
+      background-image: linear-gradient(0deg, #00000099 0%, #00000000 45%),url(../../assets/images/header/m-4.jpg);
+    }
+    &_item5{
+      background-image: linear-gradient(0deg, #00000099 0%, #00000000 45%),url(../../assets/images/header/m-5.jpg);
+    }
+    &_item6{
+      background-image: linear-gradient(0deg, #00000099 0%, #00000000 45%),url(../../assets/images/header/m-6.jpg);
     }
     &_right{
       text-align: left;
