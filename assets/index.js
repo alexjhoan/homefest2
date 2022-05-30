@@ -84,6 +84,55 @@ if (screen.width < 768) {
         },
       })
   }
+
+
+//-- ------------------------------Forms--------------------------------
+
+function sendForm(formId) {
+  'use strict'
+  const form = document.querySelector(`#${formId}`)
+  const data = {
+    nombre: form.name.value,
+    email: form.email.value,
+    telefono: form.phone.value,
+    cantidad: formId == "contactForm" ? "" : form.cantidad.value ,
+    source: 2,
+    utm_source: "web_cliente",
+    utm_medium: "home_fest",
+    InfoLeads: 1,
+    IDflow_execution: 4315
+  }
+  if (!form.checkValidity()) {
+    event.preventDefault()
+    event.stopPropagation()
+  }else{
+    fetch(`https://www.infocasas.com.uy/gracias/lanzamiento-home-fest?nombre=(${data.nombre})&email=(${data.email})&telefono=(${data.telefono})&utm_source=web_cliente&utm_medium=home_fest`)
+    .then((json) => {
+      setTimeout(()=>{
+        if (json.status === 200) {
+          $(form).siblings('#formSuccess').fadeIn();
+        } else {
+          $(form).siblings('#formError').fadeIn();
+        }
+        $(form).siblings('#formSending').hide();
+      }, 2000)
+    })
+    .catch(error => {
+      console.log('error', error);
+      setTimeout(() => {
+        $(form).siblings('#formSending').hide();
+        $(form).siblings('#formError').fadeIn();
+      }, 2000)
+    });
+    setTimeout(()=>{
+      $(form).fadeOut();
+      $(form).siblings('#formSending').fadeIn();
+    },300)
+  }
+  form.classList.add('was-validated')
+}
+
+
 //---------------------------------Tckets-------------------------------
 function dataSubmite(data) {
   const requestOptions = {
