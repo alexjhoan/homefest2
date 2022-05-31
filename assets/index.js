@@ -74,9 +74,13 @@ if (screen.width < 768) {
         //   delay: 3000,
         //   disableOnInteraction: false,
         // },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+        breakpoints:{
+          0:{
+            slidesPerView: 1
+          },
+          574:{
+            slidesPerView: 2
+          }
         },
         pagination: {
           el: ".swiper-pagination",
