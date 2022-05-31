@@ -244,12 +244,17 @@
     font-weight: 400;
     margin-bottom: 42px;
   }
-  .prueba{
+  .wrapper{
     justify-content: center;
     row-gap: 8px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-row: 1fr 1fr 1fr;
+  }
+  .gallery {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .col{
     position: relative;
@@ -258,7 +263,7 @@
     align-items: center;
     justify-content: center;
     padding: 0;
-    width: 96%;
+    width: 98%;
     margin-left: auto;
     margin-right: auto;
     img{

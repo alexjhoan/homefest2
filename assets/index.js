@@ -64,8 +64,8 @@ $('.areas .areas_grid .item').each(function(){
 // ------------------------------Actividades-----------------------------
 if (screen.width < 768) {
     $(".gallery").addClass("swiper")
-    $(".prueba").addClass("swiper-wrapper")
-    $(".col").addClass("swiper-slide")
+    $(".wrapper").addClass("swiper-wrapper")
+    $(".gallery .wrapper .col").addClass("swiper-slide")
       const mygallery = new Swiper(".gallery", {
         spaceBetween: 9,
         loop: true,

@@ -188,23 +188,65 @@
   .activity{
     padding-top: 56px;
     padding-bottom: 46px;
-    .prueba{
+    .wrapper{
       justify-content: initial;
       display: flex;
-      }
+      align-items: stretch;
+    }
+    .gallery {
+      width: 100%;
+    }
     .col{
       background-image: none;
+      flex-direction: column;
       margin: 0;
+      width: 100%;
+      flex: none;
+      height: auto;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .front .text{
+      padding: 22px 0;
+    }
+    .front1{
+      background-image: none;
+      background-color:#0070e7;
+    }
+    .front3{
+      background-image: none;
+      background-color: #aec94a;
+    }
+    .front5{
+      background-image: none;
+      background-color: #c10b6f;
+    }
+    .front7{
+      background-image: none;
+      background-color: #aec94a;
+    }
+    .front9{
+      background-image: none;
+      background-color: #ec7327;
+    }
+    .back{
+      padding-top: 22px;
+      padding-bottom: 39%;
+      .text{
+        padding-bottom: 60px;
+      }
     }
     p.h5 {
       margin-bottom: 45px;
       margin-top: 28px;
     }
-    .col{
-      flex-direction: column;
+    .item .text{
+      padding: 22px 0;
     }
     .img2{
-      background-color: #A2C232;
+      background-color: #EA7327;
     }
     .img4{
       background-color: #EA7327;
@@ -218,15 +260,12 @@
     .swiper-gallery {
       width: 100%;
     }
-    .swiper-slide {
-      // height: auto;
-    }
   }
   .swiper-button{
     outline: none;
   }
   .swiper-button-next:after, .swiper-button-prev:after{
-    // color: white;
+    color: white;
     font-size: 25px;
   }
   .informat{
