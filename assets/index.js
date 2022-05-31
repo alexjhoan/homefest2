@@ -63,17 +63,17 @@ $('.areas .areas_grid .item').each(function(){
 
 // ------------------------------Actividades-----------------------------
 if (screen.width < 768) {
-    $(".swiper-gallery").addClass("swiper")
-    $(".activity_gallery").addClass("swiper-wrapper")
-    $(".activity_gallery_item").addClass("swiper-slide")
-      const mygallery = new Swiper(".swiper-gallery", {
+    $(".gallery").addClass("swiper")
+    $(".prueba").addClass("swiper-wrapper")
+    $(".col").addClass("swiper-slide")
+      const mygallery = new Swiper(".gallery", {
         spaceBetween: 9,
         loop: true,
         slidesPerView: 1,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
+        // autoplay: {
+        //   delay: 3000,
+        //   disableOnInteraction: false,
+        // },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",

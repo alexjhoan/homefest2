@@ -188,102 +188,45 @@
   .activity{
     padding-top: 56px;
     padding-bottom: 46px;
+    .prueba{
+      justify-content: initial;
+      display: flex;
+      }
+    .col{
+      background-image: none;
+      margin: 0;
+    }
     p.h5 {
       margin-bottom: 45px;
       margin-top: 28px;
     }
+    .col{
+      flex-direction: column;
+    }
+    .img2{
+      background-color: #A2C232;
+    }
+    .img4{
+      background-color: #EA7327;
+    }
+    .img6{
+      background-color: #0070E4;
+    }
+    .img8{
+      background-color: #C00B6F;
+    }
     .swiper-gallery {
       width: 100%;
-      img{
-        width: 100%;
-      }
     }
-    &_gallery{
-      display: flex;
-      grid-column-gap: 0;
-      grid-row-gap: 0;
-      margin-top: auto;
-      margin-bottom: auto;
-      &_item{
-        justify-content: inherit;
-        &:after{
-          content: none;
-        }
-        p.h4{
-          padding: 20px 0;
-        }
-        .text{
-          position: relative;
-          display: flex;
-          width: 100%;
-          align-items: center;
-          justify-content: center;
-          &:after{
-            content: "";
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            left: 0;
-            top: 0;
-            opacity: 0.88;
-          }
-        }
-      }
-      .img1, .img3, .img5, .img7, .img9{
-        background-image: none;
-      }
-      .img1 .text{
-        &:after{
-          background-color: $azul;
-        }
-      }
-      .img2 .text{
-        &:after{
-          background-color: $naranja;
-        }
-      }
-      .img3 .text{
-        &:after{
-          background-color: #A2C232;
-        }
-      }
-      .img4 .text{
-        &:after{
-          background-color: $naranja;
-        }
-      }
-      .img5 .text{
-        &:after{
-          background-color: $text-fucsia;
-        }
-      }
-      .img6 .text{
-        &:after{
-          background-color: $azul;
-        }
-      }
-      .img7 .text{
-        &:after{
-          background-color: #A2C232;
-        }
-      }
-      .img8 .text{
-        &:after{
-          background-color: $text-fucsia;
-        }
-      }
-      .img9 .text{
-        &:after{
-          background-color: $naranja;
-        }
-      }
+    .swiper-slide {
+      // height: auto;
     }
   }
   .swiper-button{
     outline: none;
   }
   .swiper-button-next:after, .swiper-button-prev:after{
-    color: white;
+    // color: white;
     font-size: 25px;
   }
   .informat{

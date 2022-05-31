@@ -244,9 +244,12 @@
     font-weight: 400;
     margin-bottom: 42px;
   }
-  .row{
+  .prueba{
     justify-content: center;
-    row-gap: 8px
+    row-gap: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-row: 1fr 1fr 1fr;
   }
   .col{
     position: relative;
@@ -254,8 +257,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 0 8px;
     padding: 0;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
     img{
       height: 100%;
     }
