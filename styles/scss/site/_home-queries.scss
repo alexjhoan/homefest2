@@ -232,15 +232,20 @@
       background-color: #ec7327;
     }
     .back{
-      padding-top: 22px;
+      padding-top: 50px;
       padding-bottom: 39%;
       .text{
-        padding-bottom: 60px;
+        padding-bottom: 20%;
       }
     }
     p.h5 {
       margin-bottom: 45px;
       margin-top: 28px;
+    }
+    .item{
+      &:hover{
+      transform: scale(1);
+    }
     }
     .item .text{
       padding: 22px 0;
