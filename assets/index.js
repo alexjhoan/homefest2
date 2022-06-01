@@ -34,10 +34,10 @@ const swiperbanner = new Swiper(".swiper-banner", {
   spaceBetween: 0,
   loop: true,
   slidesPerView: 1,
-    // autoplay: {
-    //   delay: 4000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -60,6 +60,7 @@ $('.areas .areas_grid .item').each(function(){
     $(this).siblings().find('ul').removeClass('list-active')
   })
 });
+
 
 // ------------------------------Actividades-----------------------------
 if (screen.width < 768) {
