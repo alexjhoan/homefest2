@@ -227,7 +227,38 @@
     }
   }
 }
-
+//----------------------------Evento-Videp----------------------------//
+#play{
+  padding:0;
+  height: 70vh;
+  #myVideo {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .video_text {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 60px;
+    p{
+      color: white;
+      font-weight: 900;
+    }
+    img{
+      max-width: 160px;
+      width: 100%;
+    }
+  }
+}
 //----------------------------Actividades----------------------------//
 .activity{
   background-image: url(../../assets/images/actividades/fondo-luces.jpg);
