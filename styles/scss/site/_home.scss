@@ -333,9 +333,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    transition: all 0.5s ease;
+    overflow: hidden;
+    img {
+      transition: all 0.3s ease;
+    }
     &:hover{
-      transform: scale(1.04);
+      img {
+        transform: scale(1.04);
+      }
     }
   }
   .front1, .front3, .front5, .front7, .front9{
