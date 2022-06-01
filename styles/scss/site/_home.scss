@@ -22,42 +22,48 @@
     background-image: linear-gradient(0deg, #00000099 0%, #00000000 30%),url(../../assets/images/header/d-1.jpg);
     .left span{
       background: $azul;
+      box-shadow: 7px 0 0 #0070E4, -7px 0 0 #0070E4;
     }
   }
   &_item2{
     background-image: linear-gradient(0deg, #00000099 0%, #00000000 30%),url(../../assets/images/header/d-2.jpg);
     .left span{
       background: $naranja;
+      box-shadow: 7px 0 0 #f67327, -7px 0 0 #f67327;
     }
   }
   &_item3{
     background-image: linear-gradient(0deg, #00000099 0%, #00000000 30%),url(../../assets/images/header/d-3.jpg);
     .left span{
       background: $text-fucsia;
+      box-shadow: 7px 0 0 #C00B6F, -7px 0 0 #C00B6F;
     }
   }
   &_item4{
     background-image: linear-gradient(0deg, #00000099 0%, #00000000 30%),url(../../assets/images/header/d-4.jpg);
     .left span{
       background: $azul;
+      box-shadow: 7px 0 0 #0070E4, -7px 0 0 #0070E4;
     }
   }
   &_item5{
     background-image: linear-gradient(0deg, #00000099 0%, #00000000 30%),url(../../assets/images/header/d-5.jpg);
     .left span{
       background: $btn;
+      box-shadow: 7px 0 0 #A2C232, -7px 0 0 #A2C232;
     }
   }
   &_item6{
     background-image: linear-gradient(0deg, #00000099 0%, #00000000 30%),url(../../assets/images/header/d-6.jpg);
     .left span{
       background: $naranja;
+      box-shadow: 7px 0 0 #f67327, -75px 0 0 #f67327;
     }
   }
   .left{
     font-weight: 900;
     span {
-      padding: 0 5px;
+      padding: 0;
       display: inline-block;
       margin: 7px 0;
     }

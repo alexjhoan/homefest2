@@ -65,7 +65,8 @@ p.h1{
   background-color: $btn;
   display: inline;
   span{
-    padding: 0 15px;
+    padding: 0;
+    box-shadow: 7px 0 0 #A2C232, -7px 0 0 #A2C232;
   }
 }
 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
