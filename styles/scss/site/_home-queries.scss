@@ -1,10 +1,8 @@
 @media(min-width: 992px){
   .video{
+    max-height: calc(100vh - 79px);
     &_iframe {
-      padding-top: 56.16%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      max-height: calc(100vh - 79px);
     }
   }
 }
@@ -13,11 +11,6 @@
     .swiper-slide{
       background-position: center 30%;
     }
-  }
-}
-@media (max-width: 1360px) {
-  #play{
-    height: auto;
   }
 }
 
@@ -31,6 +24,7 @@
     }
   }
 }
+
 @media (max-width: 991.98px) {
   .banner{
     margin-top: 62px;
@@ -146,6 +140,9 @@
         }
       }
     }
+  }
+  .video {
+    height: auto;
   }
 }
 @media (max-width: 767.98px) {
