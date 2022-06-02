@@ -4,8 +4,13 @@
       background-position: center 30%;
     }
   }
-
 }
+@media (max-width: 1360px) {
+  #play{
+    height: auto;
+  }
+}
+
 @media (max-width: 1199px) {
   .fbanner{
     &_text{
@@ -98,9 +103,6 @@
         }
       }
     }
-  }
-  #play{
-    height: auto;
   }
   .informat{
     &_left{
