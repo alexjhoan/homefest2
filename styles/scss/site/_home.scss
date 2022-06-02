@@ -609,11 +609,17 @@
 //----------------------------Empresas----------------------------//
 .business{
   text-align: center;
+  padding-bottom: 24px;
   p{
     color: #494949;
   }
-  img{
+  .imga{
     margin-top: 36px;
+    margin-bottom: 30px;
+  }
+  .imgb{
+    margin-top: 15px;
+    margin-bottom: 24px;
   }
 }
 
