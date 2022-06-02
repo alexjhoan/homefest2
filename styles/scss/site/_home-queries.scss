@@ -99,6 +99,9 @@
       }
     }
   }
+  #play{
+    height: calc(100vh - 62px);
+  }
   .informat{
     &_left{
       &_line{
