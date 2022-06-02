@@ -1,12 +1,5 @@
 @media(min-width: 992px){
-  .video{
-    &_iframe {
-      padding-top: 56.16%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
+
 }
 @media (min-width: 1440px) {
   .banner{
@@ -16,7 +9,7 @@
   }
 }
 @media (max-width: 1360px) {
-  #play{
+  .video{
     height: auto;
   }
 }
