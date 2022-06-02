@@ -321,7 +321,7 @@
   }
   .back1, .back3, .back5, .back7, .back9{
     color: white;
-    transform: rotateY( 180deg );
+    transform: rotateY(180deg) translateZ(1px);
   }
   .back1{
     background: #0070E4;
