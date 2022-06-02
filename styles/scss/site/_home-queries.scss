@@ -1,5 +1,10 @@
 @media(min-width: 992px){
-
+  .video{
+    max-height: calc(100vh - 79px);
+    &_iframe {
+      max-height: calc(100vh - 79px);
+    }
+  }
 }
 @media (min-width: 1440px) {
   .banner{
@@ -8,12 +13,6 @@
     }
   }
 }
-@media (max-width: 1360px) {
-  .video{
-    height: auto;
-  }
-}
-
 @media (max-width: 1199px) {
   .fbanner{
     &_text{
@@ -24,6 +23,7 @@
     }
   }
 }
+
 @media (max-width: 991.98px) {
   .banner{
     margin-top: 62px;
@@ -139,6 +139,9 @@
         }
       }
     }
+  }
+  .video {
+    height: auto;
   }
 }
 @media (max-width: 767.98px) {
